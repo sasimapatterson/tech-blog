@@ -49,3 +49,7 @@ To add authentication
 
 ## Tech Use
 * Handlebars.js : is a template engin that makes it easy to seperate HTML from the code that powers it. (https://sabe.io/tutorials/getting-started-with-handlebars-js)
+
+* CSS : for styling the template.
+
+* Heroku : 
