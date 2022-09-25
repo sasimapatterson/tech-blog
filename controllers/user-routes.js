@@ -25,7 +25,8 @@ router.get('/', async (req, res) => {
                 return;
             }
             const user = userData.get({ plain: true });
-            res.render('user', user);
+            res.json( user );
+            // res.render('user', user);
         } catch (err) {
             res.status(500).json(err);
         };
