@@ -8,10 +8,11 @@ router.get('/', async (req, res) => {
             res.json(err);
             console.log(userData)
         });
-
+        // Serialization
         const users = userData.map((user) => user.get({ plain: true }));
-        res.json({ users });
-        // res.render('all', { users });
+        res.json({ users }); // this is just to see if I can get data of user to display on the browser
+
+        // res.render('all', { users }); // res.render to display the template in handlebars which is in 'views' folder.
         // } catch (err) {
         //     res.status(500).json(err);
         // }
@@ -25,8 +26,8 @@ router.get('/', async (req, res) => {
                 return;
             }
             const user = userData.get({ plain: true });
-            res.json( user );
-            // res.render('user', user);
+            // res.json( user );
+            res.render('user', user);
         } catch (err) {
             res.status(500).json(err);
         };
