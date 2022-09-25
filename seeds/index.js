@@ -8,10 +8,10 @@ const seedComments = require('./comment-seeds');
 // Data Serialization
 const seedAll = async () => {
     await sequelize.sync({ force: true });
+    
+    await seedUsers();
 
     await seedPosts();
-
-    await seedUsers();
 
     await seedComments();
 

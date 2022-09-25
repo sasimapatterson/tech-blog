@@ -10,7 +10,8 @@ router.get('/', async (req, res) => {
         });
 
         const users = userData.map((user) => user.get({ plain: true }));
-        res.render('all', { users });
+        res.json({ users });
+        // res.render('all', { users });
         // } catch (err) {
         //     res.status(500).json(err);
         // }

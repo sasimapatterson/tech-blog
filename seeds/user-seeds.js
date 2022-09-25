@@ -10,7 +10,7 @@ const userData = [
         password: 'i@mgittingit',
     },
     {
-        usernam: 'rubberducky',
+        username: 'rubberducky',
         password: 'quack123',
     },
 ];
