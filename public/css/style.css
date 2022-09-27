@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .nav-wrap {
@@ -33,7 +33,27 @@ h1 {
     margin-top: 20px;
     background: paleturquoise;
     width: 300px;
-    height: 60px;
+    height: 40px;
     padding-left: 30px;
     
 }
+
+.post {
+    max-width: 1800px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    background: yellow;
+}
+.existing-post {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: lightgoldenrodyellow;
+
+}
+
+{
+
+}
+

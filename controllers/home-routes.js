@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
                 attributes: ['comment_text', 'user_id', 'post_id', 'createdAt']
         });
         // Serialization 
-        const posts = postData.map((post) => post.get({ plain: true })); 
+        const posts = homepageData.map((post) => post.get({ plain: true })); 
         res.render('homepage', { posts,
             loggedIn: req.session.loggedIn
          });
