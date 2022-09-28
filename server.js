@@ -3,7 +3,7 @@
 // const express = require('express');
 // const exphbs = require('express-handlebars');
 // const session = require('express-session');
-// const helpers = require('./utils/helpers');
+const helpers = require('./utils/helpers');
 
 // const app = express();
 // const PORT = process.env.PORT || 3001;
@@ -58,7 +58,7 @@ const path = require('path');
 // const routes = require('./routes');
 const express = require('express');
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
+const hbs = exphbs.create({ helpers });
 const app = express();
 const PORT = process.env.PORT || 3001;
 const sequelize = require('./config/connection');
@@ -71,7 +71,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use(require('./controllers/dish-routes'));
+
 // app.use(require('./controllers/home-routes'));
 app.use(require('./controllers/'));
 
