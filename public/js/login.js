@@ -45,5 +45,7 @@ const signupFormHandler = async (event) => {
   }
 };
 
+// Target Submit button when user login. 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+// Target Sigh Up button when user sign up. //I don't have the template setup yet.
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
