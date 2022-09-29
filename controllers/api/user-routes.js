@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
         //     res.status(500).json(err);
         // }
     });
-
+    // Get user with id
     router.get('/user/:id', async (req, res) => {
         try {
             const userData = await User.findByPk(req.params.id);
@@ -32,5 +32,34 @@ router.get('/', async (req, res) => {
             res.status(500).json(err);
         };
     });
+
+    router.post('/login', async (req, res) => {
+        try {
+            const userData = await User.findOne({ where: { username: req.body.username }});
+
+        if (!userData) {
+            res.status(400).json({ message: 'Incorrect username' });
+            return;
+        } 
+
+        const validPassword = await userData.checkPassword(req.body.password);
+
+        if (!validPassword) {
+            res.status(400).json({ message: 'Incorrect password'});
+            return;
+        }
+
+        req.session.save(() => {
+            req.session.user_id = userData.id;
+            req.session.loggedIn = true;
+
+            res.json({ user: userData, message: 'You are now logged in!'});
+        });
+
+        } catch (err) {
+            res.status(400).json(err);
+        }        
+    });
+
 
 module.exports = router;

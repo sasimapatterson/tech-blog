@@ -58,7 +58,7 @@ h1 {
 /* Don't forget to remove display: none */
 /* single-post.handlebars (comment area) */
 .comment-box {
-    display: none;
+    /* display: none; */
     max-width: 1800px;
     height: 400px;
     margin: auto; 
@@ -67,7 +67,7 @@ h1 {
 }
 /* Don't forget to remove display:none */
 .top-part {
-    display: none;
+    /* display: none; */
     max-width: 1800px;
     height: 50px;
     background: black;
@@ -95,7 +95,7 @@ textarea {
 .submit {
     font-size: 35px;
 }
-
+/* ------ Login --------- */
 /* login.handlebars */
 .loggin-heading {
     /* display: none; */
