@@ -24,7 +24,7 @@
         // sameSite: 'strict',
       },
       resave: false,
-      saveUnitialized: true,
+      saveUninitialized: true,
       store: new sequelizeStore({
         db: sequelize
       }),
