@@ -23,29 +23,29 @@ const loginFormHandler = async (event) => {
 };
 
 // Get value from signup form
-const signupFormHandler = async (event) => {
-  event.preventDefault();
+// const signupFormHandler = async (event) => {
+//   event.preventDefault();
 
-  const name = document.querySelector('#username-signup').value.trim();
-  const email = document.querySelector('#email-signup').value.trim();
-  const password = document.querySelector('#password-signup').value.trim();
+//   const name = document.querySelector('#username-signup').value.trim();
+//   const email = document.querySelector('#email-signup').value.trim();
+//   const password = document.querySelector('#password-signup').value.trim();
 
-  if (name && email && password) {
-    const response = await fetch('/api/users/', {
-      method: 'POST',
-      body: JSON.stringify({ name, email, password }),
-      header: { 'Content-Type': 'application/json' },
-    });
+//   if (name && email && password) {
+//     const response = await fetch('/api/users/', {
+//       method: 'POST',
+//       body: JSON.stringify({ name, email, password }),
+//       header: { 'Content-Type': 'application/json' },
+//     });
 
-    if (response.ok) {
-      document.location.replace('/');
-    } else {
-      alert(response.statusText);
-    }
-  }
-};
+//     if (response.ok) {
+//       document.location.replace('/');
+//     } else {
+//       alert(response.statusText);
+//     }
+//   }
+// };
 
 // Target Submit button when user login. 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 // Target Sigh Up button when user sign up. //I don't have the template setup yet.
-document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+// document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);

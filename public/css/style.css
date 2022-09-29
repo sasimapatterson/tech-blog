@@ -97,7 +97,7 @@ textarea {
 }
 /* ------ Login --------- */
 /* login.handlebars */
-.loggin-heading {
+.login-heading {
     /* display: none; */
     color: white;
     max-width: 1800px;
