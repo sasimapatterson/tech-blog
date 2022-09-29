@@ -128,17 +128,28 @@ textarea {
  }
 .login-form input {
     width:  1700px;
-    height: 40px;
+    height: 90px;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
+    font-size: 25px;
+
 }
 
 .username-label, .psw-label {
     font-size: 30px;
     margin-left: 30px;
     
-    background: gray;
+    /* background: gray; */
+}
+
+.btn-login {
+    height: 90px;
+    width: 1700px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 35px;
 }
 
 

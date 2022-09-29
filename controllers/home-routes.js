@@ -69,7 +69,7 @@ router.get('/login', (req, res) => {
         res.redirect('/');
         return;
     }
-    res.render('login')
+    res.render('login');
 });
 
 // Go to signup page. Once user completed the signup form it will redirect to homepage.
@@ -78,7 +78,7 @@ router.get('/signup', (req, res) => {
         res.redirect('/');
         return;
     }
-    res.render('signup')
+    res.render('signup');
 });
 
 module.exports = router;
