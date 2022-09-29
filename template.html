@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Blog Template</title>
-    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/style.css" />
 </head>
+
 <body>
     <!-- This goes to main.handlebars -->
     <div class="nav-wrap">
         <nav>
             <ul>
-                <li><h2>Home</h2></li>
-                <li><h2>Dashboard</h2></li>
-                <li><h2>Login</h2></li>
-                <li><h2>Logout</h2></li>
+                <li>
+                    <h2>Home</h2>
+                </li>
+                <li>
+                    <h2>Dashboard</h2>
+                </li>
+                <li>
+                    <h2>Login</h2>
+                </li>
+                <li>
+                    <h2>Logout</h2>
+                </li>
             </ul>
             <h1>The Tech Blog</h1>
         </nav>
     </div>
     <section class="post">
         <div class="post-title">
-            <a href=""><h3>Post Title</h3></a>
-    
+            <a href="">
+                <h3>Post Title</h3>
+            </a>
+
             <p>Posted by Sasima (username) on 5/8/2020 (post date</p>
         </div>
-        <p>MVC allows developers to maintain a tru separation of concerns, devising their code between the Model layer for data, the View layer for design, and the Controller layer for application logic.</p>
+        <p>
+            MVC allows developers to maintain a tru separation of concerns, devising
+            their code between the Model layer for data, the View layer for design,
+            and the Controller layer for application logic.
+        </p>
     </section>
 
     <!-- Go to single-post.handlebars -->
@@ -40,16 +56,37 @@
                 <textarea name="comment" id="comment" cols="210" rows="10"></textarea>
             </div>
             <div>
-                <button id="submit-comment" class="btn-submit"><span class="submit">Submit</span></button>
+                <button id="submit-comment" class="btn-submit">
+                    <span class="submit">Submit</span>
+                </button>
             </div>
         </div>
     </section>
-    
+
+    <!-- This goes to login.handlebars -->
     <section>
-        
+        <div class="login">
+            <div class="loggin-heading">
+                <h2>Login</h2>
+            </div>
+            <div class="user-login">
+                <form class="login-form">
+                    <label for="username" class="username-label">Username</label><br>
+                    <input type="text" id="username"><br>
+                    <label for="psw" class="psw-label">Password</label><br>
+                    <input type="text" id="password"><br>
+                    <div>
+                        <button id="user-login" class="btn-login">
+                            Login
+                        </button>
+                    <!-- <input type="submit" value="Login"> -->
+                </form>
+            </div>
+        </div>
     </section>
-    
+
 </body>
+
 </html>
 <!-- <form class="user-comment">
     <label for='comment'>Comment</label><br>
