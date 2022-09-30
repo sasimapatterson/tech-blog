@@ -21,7 +21,7 @@ router.get("/user/:id", async (req, res) => {
   try {
     const userData = await User.findByPk(req.params.id);
     if (!userData) {
-      res.status(404).json({ message: "No user with this id " });
+      res.status(404).json({ message: "No user with this id" });
       return;
     }
     const user = userData.get({ plain: true });
@@ -33,11 +33,12 @@ router.get("/user/:id", async (req, res) => {
 });
 
 router.post("/login", async (req, res) => {
+  
   try {
     const userData = await User.findOne({
       where: { username: req.body.username },
     });
-
+    
     if (!userData) {
       res.status(400).json({ message: "Incorrect username" });
       return;
@@ -70,5 +71,15 @@ router.post('/logout', async (req, res) => {
         res.status(404).end();
     }
 });
+
+router.post('/signup', async (req, res) => {
+  try {
+    const postData = await User.findOne ({
+      where: {
+        username: req.body.username,
+      }
+    })
+  }
+})
 
 module.exports = router;
