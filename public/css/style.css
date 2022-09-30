@@ -6,76 +6,122 @@
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;;
     /* background-color: yellow; */
 }
 
 /* Homepage */
 .nav-wrap {
-    height: 100px;
-    background: pink;
+    height: 200px;
+    max-width: 1700px;
+    margin: auto;
+    background: black;
 }
 
-nav ul{
+a:link, a:visited {
+    text-decoration: none;
+    color: #DFE8CC;
+
+}
+
+ul {
     display: flex;
     margin-left: 10px;
-    background-color: lightgray;
+    width: 550px;
+    /* background-color: lightgray; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: lightgray;
+} 
     
-}
 
 li {
-    background-color: lightgreen;
-    margin-left: 20px;
+    margin-left: 40px;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 
 h1 {
-    margin-left: 25px;
-    margin-top: 20px;
-    background: paleturquoise;
-    width: 300px;
-    height: 40px;
-    padding-left: 30px;
-    
+    margin-left: 45px;
+    margin-top: 30px;
+    background: #DFE8CC;    /* #C6EBC5;*/
+    width: 350px;
+    height: 70px;
+    padding-top: 5px;
+    padding-left: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+    font-size: 48px;   
 }
 
 /* main.handlebars and single-post.handlebars */
 .post {
-    max-width: 1800px;
-    height: auto;
+    max-width: 1500px;
+    height: 220px;
     margin: auto;
     margin-top: 40px;
-    background: yellow;
+    border: 5px solid black;
+    background: #DFE8CC;
 }
 .post-title {
     display: flex;
     justify-content: space-between;
-    height: 50px;
-    background: lightgoldenrodyellow;
+    /* height: 60px; */
+    width: 1490px;  
+    margin-right: 20px;
+    height: 70px;
+    background: black;
+}
+    
+.post-title h3 {
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 30px;
+    color: lightgray;
+}
 
+.post-title p {
+    margin-right: 20px;
+    margin-top: 8px;
+    color: lightgrey;
+    font-size: 20px;
+}
+
+p {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 40px;
 }
 
 /* Don't forget to remove display: none */
 /* single-post.handlebars (comment area) */
 .comment-box {
     /* display: none; */
-    max-width: 1800px;
-    height: 400px;
+    width: 1490px;  
+    margin-right: 20px;
+    height: 430px;
     margin: auto; 
-    margin-top: 50px;
-    background: lightgreen;
+    margin-top: 50px; 
+    background: #DFE8CC;
+    border: 5px solid black;
 }
 /* Don't forget to remove display:none */
 .top-part {
     /* display: none; */
-    max-width: 1800px;
-    height: 50px;
+    /* max-width: 1800px; */
+    height: 70px;
     background: black;
 }
 
 textarea {
     margin-left: 50px;
     margin-top: 20px;
+    width: 1400px;
+    height: 150px;
+    border: 5px solid #34B3F1;
+    font-size: 24px;
 }
 
 .comment-label {
@@ -85,16 +131,21 @@ textarea {
 }
 
 .btn-submit {
-    height: 90px;
-    width: 1700px;
+    height: 60px;
+    width: 1400px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 8px;
     padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #73777B;
+    font-size: 28px;
+    color: #F7F5F2; 
+    margin-top: 25px;
 }
 
-.submit {
-    font-size: 35px;
-}
+/* #DDDDDD; */
+
 /* ------ Login --------- */
 /* login.handlebars */
 .login-heading {
@@ -105,7 +156,7 @@ textarea {
     background: black;
 }
 
-.loggin-heading h2{
+.login-heading h2 {
     font-size: 30px;
     margin-left: 30px;
     padding-top: 15px;
@@ -113,22 +164,91 @@ textarea {
 
 .login {
     /* display: none; */
-    max-width: 1800px;
-    height: 400px;
+    max-width: 1490px;
+    height: 500px;
     margin: auto; 
     margin-top: 50px;
-    background: lightgreen;
+    /* background: lightgreen; */
+    background: #DFE8CC;
+    border: 5px solid black;
 }
 
-/* .user-login {
-    margin-top: 40px;
-} */
  .login-form {
     margin-top: 20px;
  }
+
 .login-form input {
-    width:  1700px;
-    height: 90px;
+    width:  1400px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.username-label, .psw-label {
+    font-size: 30px;
+    margin-left: 30px; 
+    /* background: gray; */
+}
+
+.btn-login {
+    height: 60px;
+    width: 1400px;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    border-radius: 8px;
+    background-color: #73777B;
+    font-size: 28px;
+    color: #F7F5F2; 
+}
+
+.re-direct {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.re-direct a {
+    font-size: 28px;
+    color: #0E3EDA;  
+    
+}
+/* #3330E4;#3B44F6;    */
+/* ----- Sign Up ------- */
+.signup-heading {
+    /* display: none; */
+    color: white;
+    max-width: 1800px;
+    height: 70px;
+    background: black;
+}
+
+.signup-heading h2 {
+    font-size: 30px;
+    margin-left: 30px;
+    padding-top: 15px;
+}
+
+.signup {
+    /* display: none; */
+    max-width: 1490px;
+    height: 500px;
+    margin: auto; 
+    margin-top: 50px;
+    background: lightgreen;
+    background: #DFE8CC;
+    border: 5px solid black;
+}
+
+ .signup-form {
+    margin-top: 20px;
+ }
+
+.signup-form input {
+    width:  1400px;
+    height: 60px;
     margin-left: 30px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -136,20 +256,18 @@ textarea {
 
 }
 
-.username-label, .psw-label {
-    font-size: 30px;
+.btn-signup {
+    height: 60px;
+    width: 1400px;
     margin-left: 30px;
-    
-    /* background: gray; */
-}
-
-.btn-login {
-    height: 90px;
-    width: 1700px;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 5px;
     padding-bottom: 10px;
     font-size: 35px;
+    border-radius: 8px;
+    background-color: #73777B;
+    font-size: 28px;
+    color: #F7F5F2; 
 }
+
 
 

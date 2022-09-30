@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@200&display=swap"
+    rel="stylesheet">
   <title>Tech Blog</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -15,12 +19,12 @@
       <ul>
         <li><a href="/">Home</a> </li>
         <li>
-          <h3>Dashboard</h3>
+          Dashboard
         </li>
         {{#if loggedIn}}
         <li><button id="logout" class="hide-btn">Logout</button></li>
         {{else}}
-        <li><h3><a href="/login">Login</h3></a></li>
+        <li><a href="/login">Login</a></li>
         {{/if}}
       </ul>
       <h1>The Tech Blog</h1>
@@ -36,5 +40,3 @@
 </body>
 
 </html>
-
-

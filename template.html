@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
     <title>Tech Blog Template</title>
     <link rel="stylesheet" href="./public/css/style.css" />
 </head>
@@ -14,28 +18,18 @@
     <div class="nav-wrap">
         <nav>
             <ul>
-                <li>
-                    <h2>Home</h2>
-                </li>
-                <li>
-                    <h2>Dashboard</h2>
-                </li>
-                <li>
-                    <h2>Login</h2>
-                </li>
-                <li>
-                    <h2>Logout</h2>
-                </li>
+                <li> <a href="">Home</li></a>
+
+                <li>Dashboard</li>
+                <li>Login</li>
+                <li>Logout</li>
             </ul>
             <h1>The Tech Blog</h1>
         </nav>
     </div>
     <section class="post">
         <div class="post-title">
-            <a href="">
-                <h3>Post Title</h3>
-            </a>
-
+            <h3>Post Title</h3>
             <p>Posted by Sasima (username) on 5/8/2020 (post date</p>
         </div>
         <p>
@@ -66,7 +60,7 @@
     <!-- This goes to login.handlebars -->
     <section>
         <div class="login">
-            <div class="loggin-heading">
+            <div class="login-heading">
                 <h2>Login</h2>
             </div>
             <div class="user-login">
@@ -77,19 +71,22 @@
                     <input type="text" id="password"><br>
                     <div>
                         <button type="submit" id="user-login" class="btn-login">
-                            Login
+                            Login!
                         </button>
-                    <!-- <input type="submit" value="Login"> -->
+                        <!-- <input type="submit" value="Login"> -->
                 </form>
+                <div class="re-direct">
+                    <h3> <a class="re-direct-link" href="#"> Sign up instead </a> </h3>
+                </div>
             </div>
         </div>
     </section>
- 
+
     <!-- Signup --->
     <section>
         <div class="signup">
             <div class="signup-heading">
-                <h2>Login</h2>
+                <h2>Sign Up</h2>
             </div>
             <div class="user-signup">
                 <form class="signup-form">
@@ -102,6 +99,9 @@
                             Sign Up!
                         </button>
                 </form>
+                <div class="re-direct">
+                    <h3> <a class="re-direct-link" href="/login"> Login instead </a> </h3>
+                </div>
             </div>
         </div>
     </section>
