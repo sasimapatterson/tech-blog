@@ -76,5 +76,22 @@ To add authentication
 
 ## Visuals
 
+Homepage displaying the existing posts with the name of users and posted date.
 
+![tech-blog-homepage](./images/tech-blog-home.png)
 
+Login Page for user to be able to access the blogs.
+
+![tech-blog-login](./images/tech-blog-login.png)
+
+User can sign up to create an account.
+
+![tech-blog-signup](./images/tech-blog-signup.png)
+
+User will be able to access the posts and leave comments after logged in successfully.
+
+![tech-blog-comment](./images/tech-blog-comments.png)
+
+## Links
+
+[Heroku](https://obscure-eyrie-14613.herokuapp.com/)
