@@ -72,14 +72,14 @@ router.post('/logout', async (req, res) => {
     }
 });
 
-router.post('/signup', async (req, res) => {
-  try {
-    const postData = await User.findOne ({
-      where: {
-        username: req.body.username,
-      }
-    })
-  }
-})
+// router.post('/signup', async (req, res) => {
+//   try {
+//     const postData = await User.findOne ({
+//       where: {
+//         username: req.body.username,
+//       }
+//     })
+//   }
+// });
 
 module.exports = router;
