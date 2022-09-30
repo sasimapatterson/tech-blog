@@ -7,13 +7,13 @@ CMS-style blog site.
 3. [Usage](#usage)
 4. [Tech Use](#techUse)
 5. [Contributing](#contributing)
-6. [Link](#link)
+6. [Visuals](#visuals)
+7. [Link](#link)
 
 ## Descriptions
 This tech-blog site is following the Model-View-Controller paradigm and using modularization approach. 
 
 Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.(https://en.wikipedia.org/wiki/Modular_programming)
-
 
 
 ## Installations 
@@ -30,7 +30,7 @@ To connect to a MySQL database for the Models, and create and Express.js API for
   npm install sequelize
 ```
 
-To use environtment variables
+To use environment variables
 ```pip
   npm install dotenv --save
 ```
@@ -48,8 +48,33 @@ To add authentication
 ```
 
 ## Tech Use
-* Handlebars.js : is a template engin that makes it easy to seperate HTML from the code that powers it. (https://sabe.io/tutorials/getting-started-with-handlebars-js)
+* Handlebars.js : is a template engin that makes it easy to separate HTML from the code that powers it. (https://sabe.io/tutorials/getting-started-with-handlebars-js)
 
-* CSS : for styling the template.
+* CSS
 
-* Heroku : 
+* JavaScript
+
+* express-handlebars 
+
+* MySQL2
+
+* Sequelize
+
+* bcrypt
+
+* dotenv
+
+* express-session
+
+* connect-session-sequelize
+
+
+## Contributing
+* My instructor, Mr.Anthony Cooper
+
+* Slack Learning Support Team
+
+## Visuals
+
+
+
