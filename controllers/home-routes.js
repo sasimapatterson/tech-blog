@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
   
       const posts = postData.map((post) => post.get({ plain: true }));
   
-      res.render('homepage', { posts });
+      res.render('homepage', { posts, loggedIn: req.session.loggedIn });
     } catch (err) {
       res.status(500).json(err);
     }
@@ -33,7 +33,7 @@ router.get('/post/:id', async (req, res) => {
         });
         if(postData){ //If postData exist then serialize and render 'single-post.handlebars' file from views folder.
             const post = postData.get({ plain: true });
-            res.render('single-post', { post });
+            res.render('single-post', { post, loggedIn: req.session.loggedIn });
         } else {
             res.status(404).end();
         }

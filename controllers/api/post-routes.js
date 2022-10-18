@@ -43,7 +43,7 @@ router.get("/:id", async (req, res) => {
       ],
     });
     if (!postData) { 
-      res.status(404).jason({ message: "No post with this id" });
+      res.status(404).json({ message: "No post with this id" });
       return;
      }
      res.json(postData);    

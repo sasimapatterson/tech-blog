@@ -72,14 +72,21 @@ router.post('/logout', async (req, res) => {
     }
 });
 
-// router.post('/signup', async (req, res) => {
-//   try {
-//     const postData = await User.findOne ({
-//       where: {
-//         username: req.body.username,
-//       }
-//     })
-//   }
-// });
+router.post('/signUp', async (req, res) => {
+  console.log(req.body);
+  try {
+    const userData = await User.create(req.body);
+    
+    req.session.save(() => {
+      req.session.loggedIn = true;
+      req.session.user_id = userData.id;
+      return res.json(userData);
+    });
+
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

@@ -2,6 +2,7 @@
 {{> post-info post}}
 
 {{!-- Create comment form with submit button --}}
+{{#if loggedIn}}
 <section>
         <div class="comment-box">
             <div class="top-part"></div>
@@ -16,5 +17,4 @@
             </div>
         </div>
     </section>
-
-    
+{{/if}}
